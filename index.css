@@ -91,14 +91,8 @@ a img {
 }
 body {
   margin: 0;
-}
-
-/* end of css reset */
-
-body {
   width: 100%;
   *zoom: 1;
-  font-family: Avenir, 'Lato', sans-serif;
   font-size: 18px;
   color: #595554;
 }
@@ -115,16 +109,57 @@ body:after {
 body:after {
   clear: both;
 }
+/* end of css reset */
 
-#main {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+@font-face {
+    font-family: MuseoSans;
+    src: url(fonts/museo-sans-500.woff);
 }
 
-#main h1,
-#main h2 {
-  flex: 0 1 auto;
+@font-face {
+    font-family: MuseoSansRounded;
+    src: url(fonts/MuseoSansRounded-500.otf);
+}
+
+body {
+  position: absolute;
+  height: 100%;
+  zoom: 2; 
+  -moz-transform: scale(2); 
+  -moz-transform-origin: 0 0;
+}
+
+.Rectangle-2 {
+  width: 720px;
+  height: 706px;
+  background-image: linear-gradient(to bottom, #93edc7, #1cd8d2);
+}
+
+#main {
+  width: 100%;
+  min-height: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.NOMAD-AIRLINES {
+  width: 167px;
+  height: 18px;
+  font-family: MuseoSans;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 3px;
+  color: #ffffff;
 }
 
 .Rectangle {
@@ -135,6 +170,95 @@ body:after {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.11);
 }
 
+.BOARDING-PASS {
+  width: 125.5px;
+  height: 14.5px;
+  font-family: MuseoSans;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 2.4px;
+  color: #20d8d1;
+}
+
+.Line {
+  width: 222px;
+  height: 1.5px;
+  border-top: solid 0.5px #e5e5e5;
+}
+
+.flight {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+.third {
+  flex: 1 100%;
+}
+
+.third > * {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.JFK {
+  width: 54px;
+  height: 33px;
+  font-family: MuseoSansRounded;
+  font-size: 27.5px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 3.1px;
+  color: #6c6c6c;
+}
+
+.JFK .text-style-1 {
+  letter-spacing: 2.8px;
+}
+
+.NEW-YORK {
+  width: 31px;
+  height: 7px;
+  font-family: MuseoSansRounded;
+  font-size: 6px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  color: #cacaca;
+}
+
+.SFO {
+  width: 65.5px;
+  height: 33px;
+  font-family: MuseoSansRounded;
+  font-size: 27.5px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 3px;
+  color: #6c6c6c;
+}
+
+.SFO .text-style-1 {
+  letter-spacing: 2.8px;
+}
+
+.SAN-FRANCISCO {
+  width: 46.5px;
+  height: 7px;
+  font-family: MuseoSansRounded;
+  font-size: 6px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  color: #cacaca;
+}
+
+/*
 @media (max-width: 600px) {
   #features {
     flex-direction: column;
@@ -148,3 +272,4 @@ body:after {
     margin-bottom: 10px;
   }
 }
+*/
