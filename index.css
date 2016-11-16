@@ -1,0 +1,150 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  margin: 0;
+}
+
+/* end of css reset */
+
+body {
+  width: 100%;
+  *zoom: 1;
+  font-family: Avenir, 'Lato', sans-serif;
+  font-size: 18px;
+  color: #595554;
+}
+body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#main h1,
+#main h2 {
+  flex: 0 1 auto;
+}
+
+.Rectangle {
+  width: 221.5px;
+  height: 455px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.11);
+}
+
+@media (max-width: 600px) {
+  #features {
+    flex-direction: column;
+  }
+  #features article {
+    width: 100%;
+    margin-top: 40px;
+  }
+  #features h2 {
+    min-height: auto;
+    margin-bottom: 10px;
+  }
+}
