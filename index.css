@@ -197,9 +197,9 @@ h1 {
 .flight {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  text-align: left;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .third {
@@ -211,20 +211,14 @@ h1 {
   margin: 0 auto;
 }
 
-.JFK {
-  width: 54px;
-  height: 33px;
+.airport {
   font-family: MuseoSansRounded;
   font-size: 27.5px;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 3.1px;
+  letter-spacing: 3px;
   color: #6c6c6c;
-}
-
-.JFK .text-style-1 {
-  letter-spacing: 2.8px;
 }
 
 .plane {
@@ -236,42 +230,14 @@ h1 {
   height: 24px;
 }
 
-.NEW-YORK {
-  width: 31px;
-  height: 7px;
+.city {
   font-family: MuseoSansRounded;
   font-size: 6px;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   color: #cacaca;
-}
-
-.SFO {
-  width: 65.5px;
-  height: 33px;
-  font-family: MuseoSansRounded;
-  font-size: 27.5px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: 3px;
-  color: #6c6c6c;
-}
-
-.SFO .text-style-1 {
-  letter-spacing: 2.8px;
-}
-
-.SAN-FRANCISCO {
-  width: 46.5px;
-  height: 7px;
-  font-family: MuseoSansRounded;
-  font-size: 6px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  color: #cacaca;
+  margin-top: 2px;
 }
 
 /* menu */
