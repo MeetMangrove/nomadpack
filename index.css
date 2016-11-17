@@ -137,7 +137,7 @@ body {
 
 #main {
   width: 100%;
-  min-height: 100%; 
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,8 +171,7 @@ h1 {
 }
 
 .BOARDING-PASS {
-  width: 125.5px;
-  height: 14.5px;
+  margin-top: 20px;
   font-family: MuseoSans;
   font-size: 12px;
   font-weight: 500;
@@ -180,19 +179,23 @@ h1 {
   font-stretch: normal;
   letter-spacing: 2.4px;
   color: #20d8d1;
+  text-align: center;
 }
 
 .Line {
   width: 222px;
-  height: 1.5px;
   border-top: solid 0.5px #e5e5e5;
+  margin: 16px 0;
 }
+
+/* flight section */
 
 .flight {
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
+  padding: 0 20px;
 }
 
 .third {
@@ -256,6 +259,65 @@ h1 {
   font-style: normal;
   font-stretch: normal;
   color: #cacaca;
+}
+
+/* menu */
+
+.Checklist-before-dep {
+  font-family: MuseoSans;
+  font-size: 9px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  color: #20d9d2;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+ol {
+  counter-reset: my-badass-counter;
+  width: 80%;
+  margin: 0 auto;
+}
+
+ol > li:before {
+  display: inline-block;
+  content: counter(my-badass-counter);
+  counter-increment: my-badass-counter;
+  font-family: MuseoSansRounded;
+  font-size: 10px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.1px;
+  color: #34dccf;
+  width: 14.5px;
+  height: 14.5px;
+  border: solid 1px #34dccf;
+  border-radius: 14.5px;
+  text-align: center;
+  line-height: 15.5px; /* 14.5 + 1 */ 
+  letter-spacing: 0;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+ol > li {
+  width: 100%;
+  padding: 12px 0;
+  font-family: MuseoSans;
+  font-size: 8px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  color: #5d5d5d;
+  border-bottom: solid 0.5px #f5f5f5;
+}
+
+ol > li:last-child {
+  border: 0;
 }
 
 /*
