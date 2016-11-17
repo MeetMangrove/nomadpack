@@ -135,7 +135,7 @@ section {
 }
 
 header {
-  height: 80px;
+  height: 120px;
 }
 
 footer {
@@ -411,18 +411,10 @@ ul > li a.menu-item-tweep:hover {
   margin-top: 2.5px;
 }
 
-/*
-@media (max-width: 600px) {
-  #features {
-    flex-direction: column;
-  }
-  #features article {
-    width: 100%;
-    margin-top: 40px;
-  }
-  #features h2 {
-    min-height: auto;
-    margin-bottom: 10px;
+@media (max-width: 900px) {
+  header {
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+    -moz-transform-origin: 0 0;    
   }
 }
-*/
