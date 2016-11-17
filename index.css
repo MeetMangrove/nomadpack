@@ -356,6 +356,19 @@ ul > li {
   padding-left: 30px
 }
 
+ul > li a {
+  text-decoration: none;
+}
+
+ul > li a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+ul > li a.menu-item-tweep:hover {
+  text-decoration: none;
+}
+
 .menu-item-img {
   position: absolute;
   top: 0;
@@ -387,6 +400,7 @@ ul > li {
 }
 
 .menu-item-tweep {
+  display: block;
   text-align: right;
   font-family: MuseoSans;
   font-size: 6px;
