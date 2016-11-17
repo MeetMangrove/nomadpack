@@ -148,6 +148,19 @@ article {
   justify-content: center;
 }
 
+.logo {
+  display: block;
+  position: absolute;
+  top: 17px;
+  right: 52px;
+  width: 59.5px;
+  height: 59.5px;
+  background-image: url(assets/mangrove_logo-blanc.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
 h1 {
   position: absolute;
   top: 50px;
