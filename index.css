@@ -288,7 +288,7 @@ ol {
   counter-reset: my-badass-counter;
 }
 
-ol > li:before {
+ol li:before {
   display: inline-block;
   content: counter(my-badass-counter);
   counter-increment: my-badass-counter;
@@ -311,7 +311,11 @@ ol > li:before {
   margin-left: 10px;
 }
 
-ol > li {
+ol a {
+  text-decoration: none;
+}
+
+ol li {
   width: 100%;
   padding: 12px 0;
   font-family: MuseoSans;
@@ -323,7 +327,7 @@ ol > li {
   border-bottom: solid 0.5px #f5f5f5;
 }
 
-ol > li:last-child {
+ol li:last-child {
   border: 0;
 }
 
