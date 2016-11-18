@@ -67,8 +67,13 @@ td {
 }
 body {
   line-height: 1;
-  color: #000;
+  color: #2C2E34;
   background: #fff;
+  margin: 0;
+  width: 100%;
+  zoom: 1;
+  font-size: 18px;
+  font-family: MuseoSans;
 }
 ol,
 ul {
@@ -89,13 +94,7 @@ td {
 a img {
   border: none;
 }
-body {
-  margin: 0;
-  width: 100%;
-  zoom: 1;
-  font-size: 18px;
-  color: #595554;
-}
+
 body * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -131,11 +130,44 @@ body {
 }
 
 section {
-  background-image: linear-gradient(to bottom, #93edc7, #1cd8d2);
+  background: #FAFAFA;
+}
+
+nav {
+  font-size: 8px;
+  display: table;
+}
+
+nav hr {
+  margin: 0;
+  border: 0;
+  width: 0.5px;
+  height: 5px;
+  background: black;
+  opacity: .1;
+}
+
+nav > * {
+  display: table-cell;
+}
+
+nav > a {
+  padding: 10px 7px;
+  color: rgba(44, 46, 52, 0.28);
+  cursor: pointer;
+}
+
+nav > a:hover {
+  color: rgba(44, 46, 52, 0.4);
+}
+
+nav span {
+  color: rgba(44, 46, 52, .7);
 }
 
 header {
-  height: 120px;
+  padding: 30px 0;
+  padding-bottom: 10px;
 }
 
 footer {
@@ -158,42 +190,82 @@ article {
 
 .logo {
   display: block;
-  position: absolute;
-  top: 17px;
-  right: 52px;
-  width: 59.5px;
-  height: 59.5px;
-  background-image: url(assets/mangrove_logo-blanc.png);
+  width: 50px;
+  opacity: .1;
+  height: 50px;
+  background-image: url(assets/mangrove_logo.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
+  transition: opacity .15s linear;
 }
 
-h1 {
-  position: absolute;
-  top: 50px;
-  left: 50px;
+.logo:hover {
+  opacity: .13;
 }
 
-.NOMAD-AIRLINES {
-  font-family: MuseoSans;
-  font-size: 15px;
+.header-title {
+  font-family: MuseoSansRounded;
+  font-size: 40px;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 3px;
-  color: #ffffff;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.header-tagline {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  opacity: .7;
+  margin-top: 5px;
+}
+
+.card-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  /* avoid to cut shadows 🌝 */
+  padding: 10px 0;
+}
+
+.card-wrapper:after, .card-wrapper:before {
+  z-index: 0;
+  height: 50px;
+  width: 120%;
+  position: absolute;
+  content: '';
+  background-image: linear-gradient(-270deg, #FF512F 0%, #DD2476 100%);
+  top: 0;
+  height: 150px;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(-10deg);
+  left: -10%;
+}
+
+.card-wrapper:before {
+  opacity: .15;
+  transform: rotate(-15deg);
+  top: -80px;
 }
 
 .Rectangle {
-  width: 221.5px;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  width: 100%;
+  max-width: 221.5px;
   border-radius: 4px;
   background-color: #ffffff;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.11);
 }
 
 .BOARDING-PASS {
-  margin-top: 20px;
+  padding-top: 20px;
   font-family: MuseoSans;
   font-size: 12px;
   font-weight: 500;
@@ -297,7 +369,7 @@ ol li:before {
   border: solid 1px #34dccf;
   border-radius: 14.5px;
   text-align: center;
-  line-height: 15.5px; /* 14.5 + 1 */ 
+  line-height: 15.5px; /* 14.5 + 1 */
   letter-spacing: 0;
   margin-right: 10px;
   vertical-align: middle;
@@ -415,6 +487,6 @@ ul > li a.menu-item-tweep:hover {
   header {
     zoom: 0.5;
     -moz-transform: scale(0.5);
-    -moz-transform-origin: 0 0;    
+    -moz-transform-origin: 0 0;
   }
 }
