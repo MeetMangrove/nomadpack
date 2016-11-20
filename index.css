@@ -408,6 +408,35 @@ h3 {
   margin-top: 2px;
 }
 
+/* home: announcement */
+
+.announcement {
+  padding: 20px;
+}
+
+.announcement-title {
+  font-family: MuseoSans;
+  font-size: 8px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  color: #5d5d5d;
+  margin-bottom: 5px;
+}
+
+.announcement-text {
+  font-family: MuseoSans;
+  font-size: 7.8px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  color: #b5b5b5;
+}
+
+.announcement a {
+  color: inherit;
+}
+
 /* home: menu */
 
 .menu {
