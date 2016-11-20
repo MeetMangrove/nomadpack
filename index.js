@@ -29,11 +29,9 @@ function getCookie(c_name) {
 window.onload = function() {
   var COOKIE_NAME = 'visited';
   var visited = getCookie(COOKIE_NAME).split(',');
-  console.log('visited', visited);
 
   function upgradeLink(link) {
     var slug = link.parentNode.getAttribute('href').replace(/[\.\/]/g, '');
-    console.log(slug, visited.indexOf(slug));
     if (visited.indexOf(slug) !== -1) {
       link.className = 'visited'; 
     }
