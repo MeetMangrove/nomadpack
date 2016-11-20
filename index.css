@@ -533,10 +533,14 @@ ol li:last-child {
   transform: rotate(180deg);
 }
 
+ul {
+  padding-bottom: 20px;
+}
+
 ul > li {
   position: relative;
-  margin: 20px 0;
-  padding-left: 30px
+  margin-top: 20px;
+  padding-left: 30px;
 }
 
 ul > li a {
