@@ -503,6 +503,10 @@ ol li {
   font-stretch: normal;
   color: #5d5d5d;
   border-bottom: solid 0.5px #f5f5f5;
+  background-image: url('assets/right.svg');
+  background-repeat: no-repeat;
+  background-position: right 15px;
+  background-size: 5px;
 }
 
 ol li:last-child {
