@@ -509,8 +509,8 @@ ol li {
   background-size: 5px;
 }
 
-ol li:last-child {
-  border: 0;
+ol > *:last-child li {
+  border: 0 none;
 }
 
 /* secondary pages */
