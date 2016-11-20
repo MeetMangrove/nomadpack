@@ -253,7 +253,7 @@ article {
   top: -80px;
 }
 
-.Rectangle {
+article {
   position: relative;
   z-index: 1;
   margin: auto;
@@ -264,7 +264,7 @@ article {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.11);
 }
 
-.BOARDING-PASS {
+h3 {
   padding-top: 20px;
   font-family: MuseoSans;
   font-size: 12px;
@@ -274,6 +274,7 @@ article {
   letter-spacing: 2.4px;
   color: #20d8d1;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .Line {
