@@ -563,8 +563,9 @@ ul > li a.menu-item-tweep:hover {
   width: 20px;
   height: 20px;
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .menu-item-title {
