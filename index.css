@@ -359,26 +359,23 @@ h3 {
   z-index: 2;
 }
 
-.separator-left {
-  position: absolute;
-  left: -10px;
-  top: 0px;
-  width: 20px;
-  background: transparent;
+.separator-left,
+.separator-right {
+  box-shadow: 0 0 0 120px white, 0px 0 2px 0px rgba(0, 0, 0, 0.08) inset;  
   height: 20px;
+  width: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 0 120px white;
+  top: 0px;
+  position: absolute;
+  background: transparent;
+}
+
+.separator-left {
+  left: -10px;
 }
 
 .separator-right {
-  position: absolute;
   right: -10px;
-  top: 0px;
-  width: 20px;
-  background: transparent;
-  height: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 0 120px white;
 }
 
 .separator-line {
