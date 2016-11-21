@@ -201,10 +201,11 @@ nav > * {
   display: table-cell;
 }
 
-nav > a {
+nav > a, nav > span > a {
   padding: 10px 7px;
   color: rgba(44, 46, 52, 0.28);
   cursor: pointer;
+  text-decoration: none;
 }
 
 nav > a:hover {
@@ -361,7 +362,7 @@ h3 {
 
 .separator-left,
 .separator-right {
-  box-shadow: 0 0 0 120px white, 0px 0 2px 0px rgba(0, 0, 0, 0.08) inset;  
+  box-shadow: 0 0 0 120px white, 0px 0 2px 0px rgba(0, 0, 0, 0.08) inset;
   height: 20px;
   width: 20px;
   border-radius: 10px;
@@ -627,7 +628,7 @@ ul > li a.menu-item-tweep:hover {
 
 @media (max-width: 900px) {
   header {
-    zoom: 0.5;
+    zoom: 0.7;
     -moz-transform: scale(0.5);
     -moz-transform-origin: 0 0;
   }

@@ -1,0 +1,121 @@
+.popover {
+  background: white;
+  position: absolute;
+  user-select: none;
+  left: 0;
+  right: 0;
+  background: white;
+  max-width: 200px;
+  text-align: center;
+  margin: auto;
+  box-shadow: rgba(72,72,72,0.29804) 0px 6px 20px,rgba(84,70,35,0.13725) 0px 1px 3px,rgba(0,0,0,0.07843) 0px 0px 1px;
+  border-radius: 5px;
+  z-index: 999;
+  transform: translateX(-56px) translateY(10px);
+  padding: 0;
+  text-align: center:;
+}
+
+.popover:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  width: 50px;
+  clip: rect(-17px, 6px, 6px, -25px);
+  box-shadow: rgba(72,72,72,0) 0px 6px 20px,rgba(84,70,35,0.13725) 0px 1px 3px,rgba(0,0,0,0.07843) 0px 0px 1px;
+  height: 50px;
+  background: white;
+  margin: auto;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.popover li {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 15px 5px;
+  width: 32%;
+  text-align: center;
+}
+
+.popover li:nth-last-child(-n+2) {
+  padding-top: 0;
+}
+
+.popover li img {
+  width: 30px;
+  height: 30px;
+  background-color: #FAFAFA;
+  border-radius: 50%;
+  margin-bottom: 3px;
+}
+
+.popover li a {
+  font-weight: 300;
+}
+
+.popover li a span {
+  color: rgba(0, 0, 0, .4 );
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.popover li a:hover {
+  text-decoration: none;
+}
+
+.popover li a:hover span {
+  color: rgba(0, 0, 0, .8);
+}
+
+@media (max-width: 600px) {
+  .popover {
+    max-width: 90%;
+    width: 100%;
+    transform: translateX(0) translateY(10px);
+    display: block !important;
+    position: relative;
+    background: none;
+    box-shadow: none;
+  }
+
+  .popover:before {
+    content: none;
+  }
+
+  .popover li {
+    padding: 0 5px;
+    width: 10%;
+  }
+
+  .popover li img {
+    width: 15px;
+    height: 15px;
+    background-color: #FAFAFA;
+    border-radius: 50%;
+    margin-bottom: 0;
+
+  }
+
+  .popover li a span {
+    display: none;
+  }
+
+  #aboutmg, #social {
+    display: none
+  }
+
+  nav {
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  nav hr {
+    display: none;
+  }
+}
