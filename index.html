@@ -7,6 +7,7 @@
   <title>Nomad Pack</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="popover.css">
   <meta property="og:title" content="Nomad Pack">
   <meta property="og:description" content="TODO">
   <meta property="og:image" content="TODO">
@@ -15,23 +16,50 @@
 <body>
   <section id="main">
     <nav>
-      <a id="js-curators-toggle" href="#">curated by <span>5 mangrovers</span></a>
+    <span id="js-curators-toggle" >
+      <a href="#">
+        curated by <span>5 mangrovers</span>
+        </a>
+      <ul class='popover' id="curators" style="display: none;">
+        <li>
+          <a href="http://twitter.com/mxbraud" target='_blank'>
+            <img src='https://twitter.com/mxbraud/profile_image??size=original' />
+            <span>@mxbraud</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/adrienjoly" target='_blank'>
+            <img src='https://twitter.com/adrienjoly/profile_image?size=original' />
+            <span>@adrienjoly</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/olivierthms" target='_blank'>
+            <img src='https://twitter.com/olivierthms/profile_image?size=original' />
+            <span>@olivierthms</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/whenyouzhang" target='_blank'>
+            <img src='https://twitter.com/whenyouzhang/profile_image?size=original' />
+            <span>@whenyou</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/tchret" target='_blank'>
+            <img src='https://twitter.com/tchret/profile_image?size=original' />
+            <span>@tchret</span>
+          </a>
+        </li>
+      </ul>
+      </span>
       <div><hr /></div>
-      <a>about mangrove</a>
+      <a id='aboutmg'>about mangrove</a>
       <div><hr /></div>
       <div id="social">
         <a id="btn-tweet" target="_blank" href="http://twitter.com/meetmangrove">tweet</a>
         <a id="btn-vote" target="_blank" href="https://www.google.com/search?q=Nomad+Airlines+producthunt" style="display: none;">vote</a>
       </div>
-
-      <!-- display of the following ul is toggled by JS => you can move it anywhere you like -->
-      <ul id="curators" style="display: none;">
-        <li><a href="http://twitter.com/mxbraud">@mxbraud</a></li>
-        <li><a href="http://twitter.com/adrienjoly">@adrienjoly</a></li>
-        <li><a href="http://twitter.com/olivierthms">@olivierthms</a></li>
-        <li><a href="http://twitter.com/whenyouzhang">@whenyouzhang</a></li>
-        <li><a href="http://twitter.com/tchret">@tchret</a></li>
-      </ul>
     </nav>
     <header>
       <h1 class='header-title'>Nomad Airlines</h1>
@@ -84,7 +112,7 @@
                 </a>
               </ol>
             </div>
-          </div>            
+          </div>
           <div class="main-article-separator">
             <div class="separator-left"></div>
             <div class="separator-right"></div>
