@@ -11,6 +11,9 @@ $(document).ready(function() {
       $('#' + $(this).attr('id') + '+.menu-item-content').load(urlToLoad + ' .menu', function() {
         that.addClass('is-open')
       })
+    } else {
+      $(this).removeClass('is-open')
+      $('#' + $(this).attr('id') + '+.menu-item-content').remove()
     }
   })
 })
