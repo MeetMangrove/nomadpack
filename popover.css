@@ -5,13 +5,13 @@
   left: 0;
   right: 0;
   background: white;
-  max-width: 200px;
+  max-width: 400px;
   text-align: center;
   margin: auto;
-  box-shadow: rgba(72,72,72,0.29804) 0px 6px 20px,rgba(84,70,35,0.13725) 0px 1px 3px,rgba(0,0,0,0.07843) 0px 0px 1px;
-  border-radius: 5px;
+  box-shadow: rgba(72,72,72,0.29804) 0px 12px 40px,rgba(84,70,35,0.13725) 0px 2px 6px,rgba(0,0,0,0.07843) 0px 0px 2px;
+  border-radius: 10px;
   z-index: 999;
-  transform: translateX(-56px) translateY(10px);
+  transform: translateX(-112px) translateY(20px);
   padding: 0;
   text-align: center:;
 }
@@ -19,13 +19,13 @@
 .popover:before {
   content: '';
   position: absolute;
-  top: 6px;
+  top: 12px;
   left: 0;
   right: 0;
-  width: 50px;
-  clip: rect(-17px, 6px, 6px, -25px);
-  box-shadow: rgba(72,72,72,0) 0px 6px 20px,rgba(84,70,35,0.13725) 0px 1px 3px,rgba(0,0,0,0.07843) 0px 0px 1px;
-  height: 50px;
+  width: 100px;
+  clip: rect(-34px, 12px, 12px, -50px);
+  box-shadow: rgba(72,72,72,0) 0px 12px 40px,rgba(84,70,35,0.13725) 0px 2px 6px,rgba(0,0,0,0.07843) 0px 0px 2px;
+  height: 100px;
   background: white;
   margin: auto;
   -webkit-transform: rotate(45deg);
@@ -36,7 +36,7 @@
   position: relative;
   display: inline-block;
   margin: 0;
-  padding: 15px 5px;
+  padding: 30px 10px;
   width: 32%;
   text-align: center;
 }
@@ -46,11 +46,11 @@
 }
 
 .popover li img {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   background-color: #FAFAFA;
   border-radius: 50%;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
 }
 
 .popover li a {
@@ -76,7 +76,7 @@
   .popover {
     max-width: 90%;
     width: 100%;
-    transform: translateX(0) translateY(10px);
+    transform: translateX(0) translateY(20px);
     display: block !important;
     position: relative;
     background: none;
@@ -88,13 +88,13 @@
   }
 
   .popover li {
-    padding: 0 5px;
+    padding: 0 6px;
     width: 10%;
   }
 
   .popover li img {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     background-color: #FAFAFA;
     border-radius: 50%;
     margin-bottom: 0;
@@ -111,7 +111,7 @@
 
   nav {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     width: 100%;
   }
 
