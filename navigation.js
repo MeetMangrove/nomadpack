@@ -8,7 +8,7 @@ $(document).ready(function() {
       var that = $(this)
       $("<div class='menu-item-content is-loading'>").insertAfter($(this));
       that.addClass('is-open')
-      urlToLoad = 'http://nomadairlines.com' +  $(this).attr('href')
+      urlToLoad = 'http://nomadairlines.com/' +  $(this).attr('href')
       $('#' + $(this).attr('id') + '+.menu-item-content').load(urlToLoad + ' .menu', function(data) {
         $(this).removeClass('is-loading')
       })
