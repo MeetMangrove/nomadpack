@@ -264,7 +264,7 @@ nav span {
   max-height: 419px;
 }
 
-.card-wrapper-background:after, .card-wrapper-background:before {
+.card-wrapper-background div {
   z-index: 0;
   height: 50px;
   width: 120%;
@@ -275,14 +275,33 @@ nav span {
   height: 150px;
   bottom: 0;
   margin: auto;
-  transform: rotate(-10deg);
+  transform: rotate(0) translateY(100%);
   left: -10%;
+  display: block;
+  opacity: 0;
+  animation: enterBlock1 1s ease forwards;
 }
 
-.card-wrapper-background:before {
-  opacity: .15;
-  transform: rotate(-15deg);
+.card-wrapper-background div:last-child {
+  opacity: 0;
   top: -80px;
+  transform: rotate(0) translateY(100%);
+  animation: enterBlock2 1s ease forwards;
+  animation-delay: .2s;
+}
+
+@keyframes enterBlock1 {
+  to {
+    opacity: 1;
+    transform: rotate(-10deg) translateY(0);
+  }
+}
+
+@keyframes enterBlock2 {
+  to {
+    opacity: .15;
+    transform: rotate(-15deg) translateY(0);
+  }
 }
 
 /* main content structure */
@@ -310,6 +329,14 @@ article {
   border-radius: 4px;
   background-color: #ffffff;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.11);
+  animation: enterCard 1s ease forwards;
+  transform: translateY(100%);
+}
+
+@keyframes enterCard {
+  to {
+    transform: translateY(0);
+  }
 }
 
 h3 {
