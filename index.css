@@ -275,17 +275,19 @@ nav span {
   height: 150px;
   bottom: 0;
   margin: auto;
-  transform: rotate(0) translateY(100%);
+  transform: rotate(0) translateY(100%) ;
   left: -10%;
   display: block;
   opacity: 0;
   animation: enterBlock1 1s ease forwards;
+  animation-delay: .1s;
+
 }
 
 .card-wrapper-background div:last-child {
   opacity: 0;
   top: -80px;
-  transform: rotate(0) translateY(100%);
+  transform: rotate(0) translateY(100%) scale(.8);
   animation: enterBlock2 1s ease forwards;
   animation-delay: .2s;
 }
@@ -293,14 +295,14 @@ nav span {
 @keyframes enterBlock1 {
   to {
     opacity: 1;
-    transform: rotate(-10deg) translateY(0);
+    transform: rotate(-10deg) translateY(0) ;
   }
 }
 
 @keyframes enterBlock2 {
   to {
     opacity: .15;
-    transform: rotate(-15deg) translateY(0);
+    transform: rotate(-15deg) translateY(0) scale(1);
   }
 }
 
@@ -329,13 +331,13 @@ article {
   border-radius: 4px;
   background-color: #ffffff;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.11);
-  animation: enterCard 1s ease forwards;
-  transform: translateY(100%);
+  animation: enterCard .7s ease forwards;
+  transform: translateY(100%) scale(1.2) ;
 }
 
 @keyframes enterCard {
   to {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
